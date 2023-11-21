@@ -1,0 +1,57 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: cursive;
+}
+
+.btn {
+  background-color: red;
+  color: black;
+  font-size: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  font-size: 3rem;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.box.shown {
+  opacity: 1;
+}
